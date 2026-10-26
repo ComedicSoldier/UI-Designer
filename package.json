@@ -1,0 +1,17 @@
+{
+  "name": "comedical-ui-designer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Design game and app menus, wire buttons and keybinds between them, view the flowchart, and play the result.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "vite": "^7.1.0"
+  }
+}

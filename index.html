@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Comedical UI Designer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 1h14v9l-5 5H1z' fill='%23b4471c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+  <style id="ukcss"></style>
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <div class="brand"><i></i>Comedical UI</div>
+      <input class="pname" id="pname" aria-label="Project name" spellcheck="false">
+      <div class="modes" role="group" aria-label="Mode">
+        <button data-mode="design">Design <kbd>1</kbd></button>
+        <button data-mode="flow">Flowchart <kbd>2</kbd></button>
+        <button data-mode="play">Play <kbd>3</kbd></button>
+      </div>
+      <div class="spacer"></div>
+      <div class="status" id="status" data-s="idle"><b></b><span>Loading</span></div>
+      <button class="btn" id="undo" title="Undo (Ctrl+Z)">Undo</button>
+      <button class="btn" id="redo" title="Redo (Ctrl+Shift+Z)">Redo</button>
+      <button class="btn pri" id="projBtn" title="New, open, save, export">Project</button>
+    </header>
+    <main class="work" id="work">
+      <aside class="pane" id="left"></aside>
+      <section class="center" id="center"></section>
+      <aside class="pane" id="right"></aside>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
